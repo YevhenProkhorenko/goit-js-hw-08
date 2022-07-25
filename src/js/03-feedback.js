@@ -24,8 +24,12 @@ function submitData(e) {
     localStorage.removeItem(LOCALSTORAGE_KEY);
     form.reset();
 }
-function updateForm() {      
-    let a = JSON.parse(localStorage.getItem("LOCALSTORAGE_KEY"));
-    form.elements.email.value = a.email;
-    form.elements.message.value = a.message;
+function updateForm() {
+    const dataParse = JSON.parse(localStorage.getItem("LOCALSTORAGE_KEY"));
+    if(dataParse.email === true) {
+        form.elements.email.value = dataParse.email;
+    }    
+    if(dataParse.message === true) {
+       form.elements.message.value = dataParse.message;
+    }
 }
