@@ -30,7 +30,7 @@
 42D:\Project\goit-js-hw-08\node_modules\sass133030644371362105 1
 84D:\Project\goit-js-hw-08\node_modules\@parcel\hash\parcel-hash.linux-arm64-musl.node121436361000000000 0
 119D:\Project\goit-js-hw-08\node_modules\@parcel\node-resolver-core\test\fixture\node_modules\package-browser-alias\foo.js121436361000000000 0
-37D:\Project\goit-js-hw-08\package.json133033261212148841 0
+37D:\Project\goit-js-hw-08\package.json133033265386105446 0
 35D:\Project\goit-js-hw-08\.gitignore133030572278729233 0
 44D:\Project\goit-js-hw-08\node_modules\base-x133030644371372075 1
 36D:\Project\goit-js-hw-08\.prettierrc132986943040000000 0
