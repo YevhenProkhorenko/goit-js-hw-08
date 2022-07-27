@@ -12,7 +12,7 @@ form.addEventListener("submit", submitData);
 
 
 function saveEnteredData(e) {
-    if (localStorage) {
+    if (localStorage || '') {
         dataObject[e.target.name] = e.target.value;   
     localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(dataObject));
     }
