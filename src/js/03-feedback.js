@@ -12,15 +12,15 @@ form.addEventListener("submit", submitData);
 
 
 function saveEnteredData(e) {
-    if (localStorage || '') {
+    if (localStorage) {
         dataObject[e.target.name] = e.target.value;   
-    localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(dataObject));
-    }
+        localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(dataObject));
+    }    
     
 }
 
 function parseData() {   
-    const savedDataLocStor = localStorage.getItem(LOCALSTORAGE_KEY);
+    const savedDataLocStor = localStorage.getItem(LOCALSTORAGE_KEY) || '';
     if (localStorage) {
         return JSON.parse(savedDataLocStor);
     }
@@ -30,7 +30,7 @@ function updateForm(data) {
     if (data) {
         inputEl.value = data.email;
         textEl.value = data.message;
-}    
+    }    
 }
 
 function submitData(e) {
