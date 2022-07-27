@@ -20,7 +20,7 @@ function saveEnteredData(e) {
 }
 
 function parseData() {   
-    
+    const savedDataLocStor = localStorage.getItem(LOCALSTORAGE_KEY);
     if (localStorage) {
         return JSON.parse(savedDataLocStor);
     }
