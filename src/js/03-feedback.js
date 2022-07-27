@@ -12,15 +12,18 @@ form.addEventListener("submit", submitData);
 
 
 function saveEnteredData(e) {
-    dataObject[e.target.name] = e.target.value;   
+    if (localStorage) {
+        dataObject[e.target.name] = e.target.value;   
     localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(dataObject));
+    }
+    
 }
 
-function parseData() {
+function parseData() {   
+    
     if (localStorage) {
-        const savedDataLocStor = localStorage.getItem(LOCALSTORAGE_KEY);
         return JSON.parse(savedDataLocStor);
-    }  
+    }
 }
 
 function updateForm(data) {
