@@ -17,11 +17,10 @@ function saveEnteredData(e) {
 }
 
 function parseData() {
-    const savedDataLocStor = localStorage.getItem(LOCALSTORAGE_KEY);
     if (localStorage) {
-        
+        const savedDataLocStor = localStorage.getItem(LOCALSTORAGE_KEY);
         return JSON.parse(savedDataLocStor);
-    }
+    }  
 }
 
 function updateForm(data) {
